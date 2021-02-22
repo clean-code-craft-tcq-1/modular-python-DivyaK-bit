@@ -1,4 +1,5 @@
-from Reference import *
+from ReferenceFile import *
+from test_colorPair import *
 
 if __name__ == '__main__':
   test_number_to_pair(4, 'White', 'Brown')
