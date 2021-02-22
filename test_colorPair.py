@@ -1,3 +1,4 @@
+from ColorPairGenerator import *
 
 def test_number_to_pair(pair_number,
                         expected_major_color, expected_minor_color):
