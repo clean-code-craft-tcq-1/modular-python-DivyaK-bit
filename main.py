@@ -2,8 +2,8 @@ from ReferenceFile import *
 from test_colorPair import *
 
 def PrintData(refdata):
-  for code in refdata
-  print(code)
+  for code in refdata:
+    print(code)
     
 if __name__ == '__main__':
   test_number_to_pair(4, 'White', 'Brown')
