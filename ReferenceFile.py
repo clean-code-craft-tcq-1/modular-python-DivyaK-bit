@@ -2,7 +2,7 @@ from ColorPairNames import *
 from ColorPairNames import *
 import ColorPairGenerator as cpg
 
-def createReferenceInfo():
+def createReferenceData():
     pair_number_start_index = 1
     pair_number_end_index = 26     
     reference_data = []
