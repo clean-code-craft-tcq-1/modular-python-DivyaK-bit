@@ -2,7 +2,7 @@ from ColorPairNames import *
 from ColorPairNames import *
 import ColorPairGenerator as cpg
 
-def createReferenceData():
+def createReferenceInfo():
     pair_number_start_index = 1
     pair_number_end_index = 26     
     reference_data = []
@@ -12,11 +12,11 @@ def createReferenceData():
         reference_data.append({'Pair Number': pair_number, 'Color Code pairs': formatted_colorpair})
     return reference_data
 
-def printTable(refData, colList=None):
-    if not colList: colList = list(refData[0].keys() if refData else [])
-    myList = [colList] # 1st row = header
-    for item in refData: myList.append([str(item[col] if item[col] is not None else '') for col in colList])
+def PairList(refInfo, colList=None):
+    if not colList: colList = list(refInfo[0].keys() if refInfo else [])
+    myList = [colList]
+    for item in refInfo: myList.append([str(item[col] if item[col] is not None else '') for col in colList])
     colSize = [max(map(len,col)) for col in zip(*myList)]
     formatStr = ' | '.join(["{{:<{}}}".format(i) for i in colSize])
-    myList.insert(1, ['-' * i for i in colSize]) # Seperating line
+    myList.insert(1, ['-' * i for i in colSize])
     for item in myList: print(formatStr.format(*item))
