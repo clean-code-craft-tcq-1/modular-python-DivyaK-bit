@@ -1,6 +1,4 @@
-from ColorPairNames import *
-from ColorPairNames import *
-import ColorPairGenerator as cpg
+import PairDefination as cpg
 
 def createReferenceInfo():
     pair_number_start_index = 1
